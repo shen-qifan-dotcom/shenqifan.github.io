@@ -1,0 +1,361 @@
+//主色调
+@zsd-color:#25c77e;
+//辅助色
+@fzs-color:#f5f6fa;
+
+body{
+    width:100%;
+    background-color:@fzs-color;
+    display:flex;
+}
+// 导航栏
+.table-box{
+    width:100%;
+    height:60px;
+    background-color:#fff;
+    padding:0 40px;
+    box-sizing:border-box;
+    position:fixed;
+    top:0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+        // 导航栏左侧
+        .table-left{
+            height:50%;
+                img{
+                    height:100%;
+                }
+        }
+        // 导航栏右侧
+        .table-right{
+            // background-color:rgb(255, 202, 202);
+            height:50%;
+            display:flex;
+            align-items:center;
+            
+                .bzzx{
+                    color:gray;
+                    font-size:14px;
+                    transition:color 0.2s;
+                    &:hover{
+                        color:@zsd-color;
+                    }
+                }
+
+                .fgx{
+                    width:1px;
+                    height:50%;
+                    background-color:gainsboro;
+                    margin:0 10px;
+
+                }
+
+                .xx-icon{
+                    height:70%;
+                        img{
+                            height:100%;
+                        }
+                }
+
+                .tx-nc{
+                    height:120%;
+                    display:flex;
+                    align-items:center;
+                    margin:0 16px;
+                    li{
+                        height:100%;
+                        width:36px;
+                        border-radius:50%;
+                        background-color:#000;
+                        overflow:hidden;
+                         img{
+                             width:100%;
+                             transition:all 0.2s;
+                             &:hover{
+                                 transform:scale(1.2);
+                                 opacity: 0.6;
+                             }
+                         }
+                    }
+                    span{
+                        color:gray;
+                        font-size:14px;
+                        margin:0 10px;
+                    }
+                }
+
+
+
+
+
+
+
+        }
+}
+
+// 左侧bar-首页box
+.left-table{
+    width:18%;
+    padding:100px 0 40px 40px;
+    box-sizing:border-box;
+    // 发布作品按钮
+        .left-table-box1{
+            display:block;
+            width:80%;
+            line-height:40px;
+            background-color:@zsd-color;
+            border-radius:40px;
+            text-align:center;
+            color:#fff;
+            transition:background-color 0.2s;
+            &:hover{
+                background-color:#6adca8;
+            }
+        }
+    // 左侧所有盒子（box2）
+        .left-table-box2{
+            width:80%;
+            display:flex;
+            flex-direction:column;
+            margin-top:40px;
+            //图标和标题
+                h1{
+                    width:100%;
+                    height:40px;
+                    display:flex;
+                    align-items:center;
+                    padding:0 10px;
+                    box-sizing:border-box;
+                        img{
+                            height:60%;
+                            margin-right:10px;
+                        }
+                        span{
+                            display:inline-block;
+                            font-size:16px;
+                            color:gray;
+                        }
+                        
+                }
+                //子选项
+                li{
+                    height:40px;
+                        a{
+                            font-size:12px;
+                            font-weight:100;
+                            display:block;
+                            width:100%;
+                            height:100%;
+                            display:flex;
+                            align-items:center;
+                            justify-content:center;
+                            color:#000;
+                            transition:color 0.2s;
+                            &:hover{
+                                color:@zsd-color;
+                            }
+                        }
+                }
+
+
+        }
+
+    
+
+}
+
+// 中间内容区域最大盒子
+.content-box{
+    width:80vw;
+    display:flex;
+    flex-direction:column;
+    // background-color:red;
+}
+
+//中间内容第一个区域
+.content-box1{
+    box-sizing:border-box;
+    background-color:#fff;
+    border-radius:10px;
+    width:100%;
+    height:70px;
+    margin:100px 40px 0 0 ;
+    display:flex;
+    align-items:center;
+    padding:0 30px;
+    justify-content:space-between;
+
+        .content-box1-left{
+                                display:flex;
+                                align-items: center;
+                                nav{
+                                    width:20px;
+                                    height:20px;
+                                    margin-right:10px;
+                                        img{
+                                            width:100%;
+                                            
+                                        }
+                                }
+                                a{
+                                    color:#000;
+                                    transition:color 0.1s;
+                                    font-size:16px;
+                                    &:hover{
+                                        color:@zsd-color;
+                                    }
+                                }
+
+        }
+
+        .content-box1-right{
+            display:flex;
+            align-items:center;
+            height:100%;
+
+                .content-box1-fgx{
+                    width:1px;
+                    height:20%;
+                    background-color:rgb(199, 199, 199);
+                    margin:0 20px;
+                }
+                span{
+                    color:gray;
+                    margin-left:20px;
+                    font-size:16px;
+                }
+                a{
+                    color:#000;
+                    transition:color 0.1s;
+                    font-size:16px;
+                    &:hover{
+                    color:@zsd-color;
+                    }
+                }
+        }
+
+}
+
+//中间内容第二个区域
+.content-box2{
+    box-sizing:border-box;
+    background-color:#fff;
+    border-radius:10px;
+    width:100%;
+    margin:20px 40px 0 0 ;
+    display:flex;
+    align-items:center;
+    padding:30px 30px;
+    justify-content:space-between;
+        .content-box2-left{
+            display:flex;
+            .tx-bz{
+                margin-right:30px;
+                position:relative;
+                width:100px;
+                height:100px;
+                .content-box2-left-tx{
+                    width:100%;
+                    height:100%;
+                    border-radius:50%;
+                    overflow:hidden;
+                    background-color:#000;
+                        img{
+                            width:100%;
+                        }
+                }
+                .bz{
+                    position:absolute;
+                    right:0;
+                    bottom: 0;
+                }
+            }
+
+            .nc-btn{
+                margin-top:20px;
+                display:flex;
+                height:24px;
+                    h2{
+                        font-size:24px;
+                        font-weight:bold;
+                    }
+                    a{
+                        display:block;
+                        line-height:24px;
+                        width:70px;
+                        text-align:center;
+                        border-radius:30px;
+                        background-color:@zsd-color;
+                        margin-left:20px;
+                        color:#fff;
+                        transition:color 0.2s;
+                        font-size:12px;
+
+                        &:hover{
+                            background-color:#6adca8;
+                        }
+                    }
+            }
+        }
+
+        .content-box2-right{
+            height:100px;
+            display:flex;
+            .content-box2-right1{
+                justify-content:space-evenly;
+                padding:10px;
+                box-sizing:border-box;
+                border-radius:6px;
+                display:flex;
+                flex-direction:column;
+                height:100%;
+                background-color:@fzs-color;
+                .cbr1-zs{
+                    display:flex;
+                    align-items:center;
+                    span{
+                        font-size:14px;
+                        font-weight:200;
+                        color:gray;
+                    }
+                    img{
+                        width:20px;
+                    }
+                }
+                h2{
+                    font-size:24px;
+                }
+                .cbr1-jzr{
+                    display:flex;
+                    span{
+                        font-size:12px;
+                        margin-right:10px;
+                    }
+                }
+            }
+            .content-box2-right2{
+                height:100%;
+                width:100px;
+                margin-left:10px;
+                border-radius:6px;
+                background-color:@fzs-color;
+            }
+            .content-box2-right3{
+                height:100%;
+                width:100px;
+                margin-left:10px;
+                border-radius:6px;
+            }
+
+
+
+
+
+
+
+
+        }
+
+
+}
